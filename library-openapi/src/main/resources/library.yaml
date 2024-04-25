@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: Library
+  version: "@project.version@"
+paths:
+  /library/authors:
+    get:
+      tags: [ "library" ]
+      operationId: getAuthors
+      summary: Get authors list.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthorList'
+  /library/books/:
+    get:
+      tags: [ "library" ]
+      operationId: getBooksByAuthorId
+      summary: Get books list for given author.
+      parameters:
+        - in: query
+          name: authorId
+          schema: 
+            type: integer
+            format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BookList'
+components:
+  schemas:
+    Author:
+      type: object
+      description: Book author.
+      required:
+        - authorId
+        - name
+      properties: 
+        authorId:
+          type: integer
+          format: int32
+        name:
+          type: string
+    AuthorList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Author'
+    Book:
+      required:
+        - bookId
+        - authorId
+        - title
+      properties:
+        bookId:
+          type: integer
+          format: int32
+        authorId:
+          type: integer
+          format: int32
+        title:
+          type: string
+    BookList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Book'
