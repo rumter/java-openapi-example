@@ -1,4 +1,4 @@
-package org.rumter.examples.library.openapi.generated.dto;
+package org.rumter.examples.library.openapi.generated.v1.dto;
 
 import java.net.URI;
 import java.util.Objects;
@@ -7,18 +7,18 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.Serializable;
 import java.time.OffsetDateTime;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 
 import java.util.*;
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 
 /**
  * BookDTO
  */
 
 @JsonTypeName("Book")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.4.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.7.0")
 public class BookDTO implements Serializable {
 
   private static final long serialVersionUID = 1L;
@@ -50,7 +50,7 @@ public class BookDTO implements Serializable {
   /**
    * Get bookId
    * @return bookId
-  */
+   */
   @NotNull
   @JsonProperty("bookId")
   public Integer getBookId() {
@@ -69,7 +69,7 @@ public class BookDTO implements Serializable {
   /**
    * Get authorId
    * @return authorId
-  */
+   */
   @NotNull
   @JsonProperty("authorId")
   public Integer getAuthorId() {
@@ -88,7 +88,7 @@ public class BookDTO implements Serializable {
   /**
    * Get title
    * @return title
-  */
+   */
   @NotNull
   @JsonProperty("title")
   public String getTitle() {

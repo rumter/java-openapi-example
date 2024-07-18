@@ -1,4 +1,4 @@
-package org.rumter.examples.library.openapi.generated.invoker;
+package org.rumter.examples.library.openapi.generated.v1.invoker;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -55,9 +55,9 @@ import java.util.TimeZone;
 import java.util.function.Supplier;
 import java.time.OffsetDateTime;
 
-import org.rumter.examples.library.openapi.generated.invoker.auth.Authentication;
+import org.rumter.examples.library.openapi.generated.v1.invoker.auth.Authentication;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.4.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.7.0")
 public class ApiClient extends JavaTimeFormatter {
     public enum CollectionFormat {
         CSV(","), TSV("\t"), SSV(" "), PIPES("|"), MULTI(null);
@@ -82,7 +82,7 @@ public class ApiClient extends JavaTimeFormatter {
 
     private long waitTimeMillis = 10;
 
-    private String basePath = "http://localhost";
+    private String basePath = "http://localhost:8080/api/library/v1";
 
     private RestTemplate restTemplate;
 

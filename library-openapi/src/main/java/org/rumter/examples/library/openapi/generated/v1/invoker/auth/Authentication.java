@@ -1,4 +1,4 @@
-package org.rumter.examples.library.openapi.generated.invoker.auth;
+package org.rumter.examples.library.openapi.generated.v1.invoker.auth;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.MultiValueMap;

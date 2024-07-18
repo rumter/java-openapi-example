@@ -21,9 +21,9 @@ interface Library {
 
 OpenAPI REST server:
 ```
-/library/authors/
-/library/authors/{authorId}
-/library/books/{authorId}
+/api/library/v1/authors
+/api/library/v1/authors/{authorId}
+/api/library/v1/books/{authorId}
 ```
 
 OpenAPI REST client: CLI application.

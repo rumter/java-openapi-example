@@ -1,9 +1,12 @@
 openapi: 3.1.0
 info:
   title: Library
-  version: "@project.version@"
+  version: 1.0.0
+servers:
+  - url: "http://localhost:8080/api/library/v1/"
+    description: Example for dev.
 paths:
-  /library/authors:
+  /authors:
     get:
       tags: [ "library" ]
       operationId: getAuthors
@@ -15,7 +18,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthorList'
-  /library/books/:
+  /books:
     get:
       tags: [ "library" ]
       operationId: getBooksByAuthorId
