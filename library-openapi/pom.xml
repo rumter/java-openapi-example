@@ -11,8 +11,6 @@
 
     <artifactId>library-openapi</artifactId>
     
-    <packaging>jar</packaging>
-    
     <properties>
         <openapi-specs.directory>${project.basedir}/src/main/resources</openapi-specs.directory>
 
