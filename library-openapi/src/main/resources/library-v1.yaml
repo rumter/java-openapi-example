@@ -48,8 +48,12 @@ components:
         authorId:
           type: integer
           format: int32
+          examples:
+            - 101
         name:
           type: string
+          examples:
+            - "First and Last name"
     AuthorList:
       type: array
       items:
@@ -63,11 +67,17 @@ components:
         bookId:
           type: integer
           format: int32
+          examples:
+            - 1001
         authorId:
           type: integer
           format: int32
+          examples:
+            - 101
         title:
           type: string
+          examples:
+            - "Some book title"
     BookList:
       type: array
       items:
